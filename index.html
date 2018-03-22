@@ -110,13 +110,10 @@
     <div class="hidden-sm-down text-uppercase">
       <ul class="navbar-nav">
         <li class="nav-item px-1 ">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link" href="minimal/index.html">Investor Portal</a>
-        </li>
-        <li class="nav-item px-1 ">
-          <a class="nav-link" href="bold/index.html">Contact</a>
+          <a class="nav-link">Investor Portal</a>
         </li>
       </ul>
     </div>
@@ -126,38 +123,43 @@
   <div class="block-xs-middle pb-5">
     <div class="container">
       <div class="row">
-        <div class="col-sm-10 col-lg-6">
+        <div class="col-sm-10 col-lg-7">
 
-          <img src="assets/img/vicon1.png" style="width:40px; margin-top:5px; margin-right:5px" class="mb-3 animated rotateIn"><img src="assets/img/v2.png" style="width:350px" class="mb-3">
-          <p class="lead mb-4 text-muted">Venera is an investment firm focused on actively creating, developing and scaling innovative businesses.</p>
+          <img src="assets/img/vicon1.png" style="width:40px; margin-top:5px; margin-right:5px" class="mb-3 animated rotateIn hidden-xs-down"><img src="assets/img/v2.png" style="width:350px" class="mb-3 hidden-xs-down">
+          <img src="assets/img/vicon1.png" style="width:25px; margin-top:5px; margin-right:5px" class="mb-3 animated rotateIn hidden-sm-up"><img src="assets/img/v2.png" style="width:260px" class="mb-3 hidden-sm-up">
+          <p class="lead mb-4 text-muted">Venera is an investment firm focused on connecting global investors with the most innovative companies.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="block block-secondary app-iphone-block">
+<div id="about"></div>
+<div class="block block-secondary app-iphone-block" style="margin-bottom:100px; margin-top:100px">
   <div class="container">
     <div class="row app-align-center">
 
       <div class="col-sm-5 hidden-sm-down mb-5">
-        <img class="app-iphone" src="assets/img/pulsar.png" style="width: 100%;">
+        <img class="app-iphone" src="assets/img/network.jpg" style="width: 100%;">
       </div>
 
       <div class="col-md-6 offset-md-1 col-sm-12 offset-sm-0 mb-5">
         <h6 class="text-muted text-uppercase">Venera Ventures</h6>
-        <h3>Connecting New York City with the rest of the world</h3>
-        <p class="lead mb-4">There’s a serious lack of investors who understand the international market outside of the U.S. and there's also a serious shortage of cross-border experts who can help New York City startups to unlock the global potential.</p>
-        <!--<div class="row hidden-md-down">
+        <h3>Creating an investment bridge</h3>
+        <p class="lead mb-4 text-justify">There's a serious amount of global investors who lack the access to great companies raising capital, and there's also a shortage of cross-border experts who can help local companies unlock global potential.</p>
+        <div class="row hidden-md-down">
           <div class="col-sm-6 mb-3">
-            <h5>Data frequency</h5>
-            <p>We poll for data on a millisecond basis. You can react to new information in seconds rather than days. <a href="#" class="text-primary">Learn more.</a></p>
+            <h5>For Investors</h5>
+            <p>Venera provides continuous access to investment opportunities in great early to mid stage companies.</a></p>
           </div>
           <div class="col-sm-6">
-            <h5>Reliability &amp; uptime</h5>
-            <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime, always. <a href="#" class="text-primary">Learn more</a>.</p>
+            <h5>For Companies</h5>
+            <p>We do venture capital investments in exceptional companies and provide them with access to global investors.</p>
           </div>
-        </div>-->
+        </div>
+      </div>
+      <div class="col-sm-5 hidden-sm-up">
+        <img class="app-iphone" src="assets/img/network.jpg" style="width: 100%;">
       </div>
     </div>
 
@@ -170,8 +172,8 @@
       <div class="col-md-5 mb-5">
         <ul class="list-unstyled list-spaced">
           <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
-          <li class="text-muted">
-             Venera Ventures is inspired by the Venera probes who became became the first human-made devices to enter the atmosphere of another planet fundamentally creating the first planetary bridge. With this firm we aim to create a strong bridge for investments across different countries.
+          <li class="text-muted text-justify">
+             Venera Ventures is inspired by the Venera probes who became the first human-made devices to enter the atmosphere of another planet essentially creating the first multiplanetary bridge. Venera focuses on creating a connection between world investors and great companies.
           </li>
         </ul>
       </div>
@@ -179,14 +181,17 @@
         
       </div>
       <div class="col-md-2 mb-5">
-        
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Contact</h6></li>
+          <li class="text-muted">175 Varick St. New York, NY 10014</li>
+          <li class="text-muted">contact@venera.vc</li>
+        </ul>
       </div>
       <div class="col-md-2 mb-5">
         <ul class="list-unstyled list-spaced">
           <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
           <li class="text-muted">Terms</li>
           <li class="text-muted">Legal</li>
-          <li class="text-muted">Privacy</li>
         </ul>
       </div>
     </div>
@@ -200,6 +205,14 @@
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
+    <script type="text/javascript">
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+    });
+    </script>
   </body>
 </html>
 
