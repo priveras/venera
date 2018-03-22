@@ -113,7 +113,7 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link">Investor Portal</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Investor Portal</a>
         </li>
       </ul>
     </div>
@@ -138,7 +138,8 @@
 <div class="block block-secondary app-iphone-block" style="margin-bottom:100px; margin-top:100px">
   <div class="container">
     <div class="row app-align-center">
-
+      <div class="col-sm-5 hidden-sm-up mb-5">
+      </div>
       <div class="col-sm-5 hidden-sm-down mb-5">
         <img class="app-iphone" src="assets/img/network.jpg" style="width: 100%;">
       </div>
@@ -147,7 +148,7 @@
         <h6 class="text-muted text-uppercase">Venera Ventures</h6>
         <h3>Creating an investment bridge</h3>
         <p class="lead mb-4 text-justify">There's a serious amount of global investors who lack the access to great companies raising capital, and there's also a shortage of cross-border experts who can help local companies unlock global potential.</p>
-        <div class="row hidden-md-down">
+        <div class="row">
           <div class="col-sm-6 mb-3">
             <h5>For Investors</h5>
             <p>Venera provides continuous access to investment opportunities in great early to mid stage companies.</a></p>
@@ -157,9 +158,6 @@
             <p>We do venture capital investments in exceptional companies and provide them with access to global investors.</p>
           </div>
         </div>
-      </div>
-      <div class="col-sm-5 hidden-sm-up">
-        <img class="app-iphone" src="assets/img/network.jpg" style="width: 100%;">
       </div>
     </div>
 
@@ -198,6 +196,35 @@
   </div>
 </div>
 
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Investor Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary">Submit</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
